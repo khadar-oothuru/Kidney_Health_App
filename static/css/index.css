@@ -1,0 +1,272 @@
+
+body {
+    font-family: 'PT Serif', serif;
+    color: rgb(18, 60, 143); 
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    padding-bottom: 100px; 
+    box-sizing: border-box;
+}
+
+center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+
+.heading-txt{
+        font-size: 74px;
+        line-height: 68px;
+        margin-bottom: 50px;
+        letter-spacing: -0.03em;
+        margin-top: 25px;
+        font-weight: 700;
+        color: white;
+        padding-bottom: 4px;
+       
+        background: linear-gradient(271.72deg, rgb(162, 250, 207) 7.09%, rgb(100, 172, 255) 96.61%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+    
+}
+
+
+
+
+.top-container {
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    max-width: 100%;
+    margin: 15px auto;
+    padding: 100px;
+    gap:45px;
+}
+
+.top-container p {
+    font-size: 20px; 
+    color: rgb(18, 60, 143); 
+    
+}
+
+
+.top-txt{
+    font-size:70px;
+    color: white;
+    background: linear-gradient(271.72deg, rgb(6, 40, 53)09%, rgb(15, 116, 232) 96.61%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+
+}
+
+
+.top-cont-img {
+    max-width: 470px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    
+}
+
+
+.upload-div{
+
+    width: 85%;
+    font-size: 20px;
+    margin: auto;
+    margin-top: 100px;
+    height: fit-content;
+    background:#0c1414;
+    border-radius: 10px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.3);
+    padding: 75px;
+    height:1000px;
+
+
+    
+
+}
+
+.desc-upload{
+
+    display: flex;
+    flex-direction: row;
+    gap:150px;
+    margin-top:150px;
+   
+}
+
+.upload-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 120px;
+     
+}
+
+
+
+.desc ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.desc li {
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px; /* Add rounded corners */
+    display:inline-flex;/* Display list items inline */
+   
+
+}
+
+.desc li:not(:last-child) {
+    margin-right: 10px; /* Add right margin for all list items except the last one */
+}
+
+.desc li:last-child {
+    margin-bottom: 0; /* Remove margin-bottom for the last list item */
+}
+
+.description{
+
+    
+}
+
+
+#upload-file {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-top: -125px;
+    width: 200px;
+    height: 20px;
+}
+
+#imageUpload {
+    color: rgb(18, 60, 143);
+    font-size: 14px; 
+    font-weight: bold; 
+    
+    
+}
+
+
+.img-getting{
+display: flex;
+flex-direction:row;
+
+}
+
+.img-getting-container{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+    margin-top: 75px;
+    
+    }
+.image-section {
+    display: none;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width:350px;
+    height:350px;
+    margin-right:100px;
+}
+
+#imagePreview {
+    width: 300px;
+    height: 300px;
+    border-radius: 8px;
+    background-color: #ffffff;
+
+    box-shadow: 0 0 10px rgba(121, 97, 97, 0.1);
+}
+
+#btn-predict {
+    background-color:rgb(67, 184, 184);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+#btn-predict:hover {
+    background-color:rgb(41, 90, 90);
+
+}
+
+.loader {
+    display: none;
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #50d8ed;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#result {
+    text-align: center;
+    margin-top: 100px;
+    color:white;
+    font-size:20px;
+    
+   
+}
+
+
+
+.footer-container {
+   
+        text-align: center;
+        padding: 5px;
+        background-color: #abbaba;
+        color: #000;
+        position: fixed;
+        width: 100%;
+        display: none; 
+   
+}
+
+
+.footer-content {
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+
+.footer-content p:first-child {
+    font-weight: bold;
+}
+
+
+.footer-content p:last-child {
+    margin-top: 10px; 
+}

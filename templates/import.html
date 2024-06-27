@@ -1,0 +1,94 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kidney Tumor Classification Using Deep Learning</title>
+    <link href="{{ url_for('static', filename='css/index.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/newjs.js') }}" type="text/javascript"></script>
+
+    <link href="{{ url_for('static', filename='css/nav.css') }}" rel="stylesheet"></link>
+
+
+
+</head>
+
+<body>
+    
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a class="navbar-brand" href="#">
+                <img src="/static/resources/log.jpeg" alt="Logo" class="logo">
+                <h1>Tumor Detector</h1>
+            </a>
+            <div class="navbar-links">
+                <a href="#" class="nav-link">Home</a>
+                <a href="#" class="nav-link">About Us</a>
+                <a href="#" class="nav-link">Services</a>
+                
+            </div>
+            <div class="navbar-buttons">
+                <a href="#" class="login-button">Login</a>
+                <a href="#" class="login-button">Signup</a>
+
+
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+
+
+
+    {% block footer %}
+    {% endblock %}
+
+
+
+</body>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    var footer = document.querySelector('.footer-container');
+
+    window.addEventListener('scroll', function() {
+        // Get the scroll position and viewport height
+        var scrollPosition = window.scrollY || window.pageYOffset || document.documentElement.scrollTop;
+        var windowHeight = window.innerHeight || document.documentElement.clientHeight;
+
+        // Get the full document height
+        var documentHeight = Math.max(
+            document.body.scrollHeight, document.documentElement.scrollHeight,
+            document.body.offsetHeight, document.documentElement.offsetHeight,
+            document.body.clientHeight, document.documentElement.clientHeight
+        );
+
+        // Calculate the distance from the bottom
+        var distanceFromBottom = documentHeight - (scrollPosition + windowHeight);
+
+        // Set the display property based on the distance from the bottom
+        if (distanceFromBottom < footer.offsetHeight + 10) {
+            footer.style.display = 'block';
+        } else {
+            footer.style.display = 'none';
+        }
+    });
+});
+
+</script>
+</html>
+
+
+
+
+
+
+

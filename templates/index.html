@@ -1,0 +1,120 @@
+{% extends "import.html" %} 
+{% block content %}
+
+<center>
+    <br>
+   
+
+    <h2 class=" top-txt"
+    >Health is <span class="head-span">Our priority</span> </h2>
+
+    <div class="top-container">
+
+       
+        <p>
+            Kidney tumor detection is a crucial aspect of medical imaging where advanced technologies
+            are employed to identify and analyze tumors in the kidneys. Early detection of kidney tumors
+            plays a vital role in providing timely and effective medical intervention. This process often
+            involves the use of medical imaging techniques such as CT scans, MRIs, and ultrasound to
+            capture detailed images of the kidneys and identify any abnormalities or tumors.
+        </p>
+        <img class="top-cont-img" src="static/resources/gradient-urology-illustration/top-cont-img.jpg" alt="Kidney Tumor Detection Image">
+    </div>
+
+
+    
+
+
+    <div class="upload-div">
+
+        <h2 class=" heading-txt">Kidney Tumor Classification</h2>
+
+        <div class="desc-upload">
+
+        <div class="desc">
+
+            <ul>
+            <li id="description" >
+                Normal:  A healthy kidney without any tumors, cysts, or stones.
+            </li>
+            <li id="description">
+                Tumor:  An abnormal growth of cells in the kidney, which may be benign or malignant.
+            </li>
+            <li id="description" >
+                Cyst:  A fluid-filled sac in the kidney, which may or may not be harmful.
+            </li>
+            <li id="description" >
+                Stone:  Solid particles that form in the kidney, causing pain and potential blockages.
+            </li>
+        
+           </ul>
+            </div>
+
+
+
+            <div class="upload-form">
+                <form id="upload-file" method="post" enctype="multipart/form-data">
+                    <!-- Hide the default file input -->
+                    <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg" style="display: none;">
+            
+                    <!-- Custom label with an image icon -->
+                    <label  for="imageUpload" class="custom-file-upload">
+                        <!-- <i class="fas fa-image"></i> Upload Image -->
+                        <img  style="width:75px; height:75px; margin-top: -13%; " src="../static/resources/cloud.png" alt=""> 
+                    </label>
+
+                </form>
+            </div>
+</div>
+   
+
+
+<div class="img-getting-container">
+
+    <div class="img-getting">
+
+    <div class="image-section" style="display:none;">
+        <img id="imagePreview" src="#" style="width:350px;height:350px; background-color: aliceblue;" /><br><br>
+        <div>
+
+            <button type="button" id="btn-predict">Predict!</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+</div>
+
+
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+
+</div>
+
+</div>
+
+</center>
+
+<br><br>
+{% endblock %}
+
+
+
+
+
+
+
+{% block footer %}
+
+<footer class="footer-container">
+    <div class="footer-content">
+        <p>&copy; 2023 TumorDetection Website. All rights reserved.</p>
+        <p>Contact us: info@yourhealthwebsite.com</p>
+    </div>
+</footer>
+
+{% endblock %}
